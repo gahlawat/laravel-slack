@@ -8,7 +8,7 @@ class SlackServiceProvider extends ServiceProvider
 {
     protected function publishConfig() {
         $this->publishes([
-            __DIR__.'/../config/slack.php' => config_path('slack.php'),
+            __DIR__.'/../../config/slack.php' => config_path('slack.php'),
         ]);
     }
 

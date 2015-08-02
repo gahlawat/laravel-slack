@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'incoming-webhook'   => 'https://hooks.slack.com/services/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',
+    'incoming-webhook'   => 'https://your-incoming-webhook-url',
 
     'default_username'   => 'jivesh',
 

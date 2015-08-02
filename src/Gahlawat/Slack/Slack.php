@@ -5,7 +5,8 @@ use GuzzleHttp\Psr7\Request;
 use Log;
 
 class Slack {
-    public function send( $message, $username = config('slack.default_username'), $emoji = config('slack.default_emoji') ) {
+
+    public function send( $message, $username = "config('slack.default_username')", $emoji = "config('slack.default_emoji')" ) {
 
         $sendData = [
             'text'       => $message,
@@ -29,4 +30,5 @@ class Slack {
             Log::error('Slack incoming webhook error');
         }
     }
+
 }

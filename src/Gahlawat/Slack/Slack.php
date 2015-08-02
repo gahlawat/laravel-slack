@@ -6,7 +6,34 @@ use Log;
 
 class Slack {
 
-    public function send( $message, $username = "config('slack.default_username')", $emoji = "config('slack.default_emoji')" ) {
+    protected $defaultUsername;
+    protected $defaultEmoji;
+
+    public function __construct() {
+
+        if ( config('slack.default_username') ) {
+            $this->defaultUsername  = config('slack.default_username');
+        } else {
+            $this->defaultUsername  = 'jivesh-bot';
+        }
+
+        if ( config('slack.default_emoji') ) {
+            $this->defaultEmoji  = config('slack.default_emoji');
+        } else {
+            $this->defaultEmoji = ':ghost:';
+        }
+
+    }
+
+    public function send( $message, $username = "", $emoji = "" ) {
+
+        if ( !trim($username) ) {
+            $username = $this->defaultUsername;
+        }
+
+        if ( !trim($emoji) ) {
+            $emoji = $this->defaultEmoji;
+        }
 
         $sendData = [
             'text'       => $message,

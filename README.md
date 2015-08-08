@@ -1,5 +1,9 @@
 # laravel-slack
 
+[![Total Downloads](https://poser.pugx.org/jivesh/laravel-slack/downloads)](https://packagist.org/packages/jivesh/laravel-slack)
+[![Latest Stable Version](https://poser.pugx.org/jivesh/laravel-slack/v/stable)](https://packagist.org/packages/jivesh/laravel-slack)
+[![License](https://poser.pugx.org/jivesh/laravel-slack/license)](https://packagist.org/packages/jivesh/laravel-slack)
+
 A very tiny and lightweight integration with the Slack API for posting notifications or any kind of messages to your team's Slack account.
 
 ---

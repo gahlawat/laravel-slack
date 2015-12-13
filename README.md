@@ -74,7 +74,7 @@ $ php artisan vendor:publish
 - Send any message in real time to your Slack account using this anywhere in your php code:
 
 ```php
-\Slack::send( 'your-message' );
+\Slack::send('your-message');
 ```
 
 - The backslash indicates global namespace scope for this function, you may import Slack namespace on top of your file by ```using``` it:
@@ -86,13 +86,13 @@ use Slack;
 - Then, you can call this Facade without a ```\``` as:
 
 ```php
-Slack::send( 'your-message' );
+Slack::send('your-message');
 ```
 
 - To change the default name and/or display icon in your Slack app for any message, use:
 
 ```php
-Slack::send( 'your-message' [, 'display-name' [, 'display-emoji' ]] );
+Slack::send('your-message' [,'display-name' [,'display-emoji']]);
 
 // here [] indicates optional parameters
 ```

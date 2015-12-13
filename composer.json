@@ -8,12 +8,10 @@
         "guzzlehttp/guzzle": "^6.0"
     },
     "license": "MIT",
-    "authors": [
-        {
-            "name": "Jivesh S. Gahlawat",
-            "email": "jiveshsg@gmail.com"
-        }
-    ],
+    "authors": [{
+        "name": "Jivesh S. Gahlawat",
+        "email": "jiveshsg@gmail.com"
+    }],
     "minimum-stability": "stable",
     "autoload": {
         "psr-4": {

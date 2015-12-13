@@ -1,4 +1,6 @@
-<?php namespace Gahlawat\Slack\Facade;
+<?php
+
+namespace Gahlawat\Slack\Facade;
 
 use Illuminate\Support\Facades\Facade;
 

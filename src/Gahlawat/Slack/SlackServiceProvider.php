@@ -6,13 +6,15 @@ use Illuminate\Support\ServiceProvider;
 
 class SlackServiceProvider extends ServiceProvider
 {
-    protected function publishConfig() {
+    protected function publishConfig()
+    {
         $this->publishes([
             __DIR__.'/../../config/slack.php' => config_path('slack.php'),
         ]);
     }
 
-    protected function registerFacade() {
+    protected function registerFacade()
+    {
         $this->app->bind('gahlawat.slack', function ($app) {
             return new Slack();
         });
@@ -20,8 +22,6 @@ class SlackServiceProvider extends ServiceProvider
 
     /**
      * Bootstrap the application services.
-     *
-     * @return void
      */
     public function boot()
     {
@@ -30,8 +30,6 @@ class SlackServiceProvider extends ServiceProvider
 
     /**
      * Register the application services.
-     *
-     * @return void
      */
     public function register()
     {

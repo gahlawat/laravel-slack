@@ -11,21 +11,17 @@ class Slack
     const DEFAULT_EMOJI = ':ghost:';
     const DEFAULT_BOT = 'jivesh-bot';
 
-    protected $defaultUsername;
-    protected $defaultEmoji;
+    protected $defaultUsername = self::DEFAULT_BOT;
+    protected $defaultEmoji = self::DEFAULT_EMOJI;
 
     public function __construct()
     {
         if (config('slack.default_username')) {
             $this->defaultUsername = config('slack.default_username');
-        } else {
-            $this->defaultUsername = self::DEFAULT_BOT;
         }
 
         if (config('slack.default_emoji')) {
             $this->defaultEmoji = config('slack.default_emoji');
-        } else {
-            $this->defaultEmoji = self::DEFAULT_EMOJI;
         }
     }
 
@@ -44,7 +40,7 @@ class Slack
             'username' => $username,
             'icon_emoji' => $emoji,
         ];
-        
+
         $headers = [
             'Content-Type' => 'application/json',
         ];

@@ -53,7 +53,7 @@ class Slack
                 'headers' => $headers,
                 'body' => json_encode($sendData),
             ]);
-        } catch (Exception $e) {
+        } catch (\Exception $e) {
             Log::error($e->getMessage());
         }
 

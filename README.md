@@ -1,9 +1,11 @@
 # laravel-slack
 
 [![Author](https://img.shields.io/badge/author-@jivesh-blue.svg?style=flat-square)](https://twitter.com/jiveshsg)
-[![Total Downloads](https://poser.pugx.org/jivesh/laravel-slack/downloads?format=flat-square)](https://packagist.org/packages/jivesh/laravel-slack)
-[![Latest Stable Version](https://poser.pugx.org/jivesh/laravel-slack/v/stable?format=flat-square)](https://packagist.org/packages/jivesh/laravel-slack)
-[![License](https://poser.pugx.org/jivesh/laravel-slack/license?format=flat-square)](https://packagist.org/packages/jivesh/laravel-slack)
+[![Build Status](https://img.shields.io/scrutinizer/build/g/jiveshsg/laravel-slack.svg?style=flat-square)](https://scrutinizer-ci.com/g/jiveshsg/laravel-slack/build-status/master)
+[![Quality Score](https://img.shields.io/scrutinizer/g/jiveshsg/laravel-slack.svg?style=flat-square)](https://scrutinizer-ci.com/g/jiveshsg/laravel-slack/?branch=master)
+[![Total Downloads](https://img.shields.io/packagist/dt/jivesh/laravel-slack.svg?style=flat-square)](https://packagist.org/packages/jivesh/laravel-slack)
+[![Packagist Version](https://img.shields.io/packagist/v/jivesh/laravel-slack.svg?style=flat-square)](https://packagist.org/packages/jivesh/laravel-slack)
+[![Software License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://packagist.org/packages/jivesh/laravel-slack)
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/9968ff31-0d2a-4aa2-9a36-5d8a63742311/big.png)](https://insight.sensiolabs.com/projects/9968ff31-0d2a-4aa2-9a36-5d8a63742311)
 
 A very tiny and lightweight integration with the Slack API for posting notifications or any kind of messages to your team's Slack account.

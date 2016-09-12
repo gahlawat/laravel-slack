@@ -44,7 +44,10 @@ class Slack
             'username' => $username,
             'icon_emoji' => $emoji,
         ];
-        $headers['Content-Type'] = 'application/json';
+        
+        $headers = [
+            'Content-Type' => 'application/json',
+        ];
 
         $guzzleClient = new Client();
 

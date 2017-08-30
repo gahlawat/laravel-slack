@@ -2,17 +2,17 @@
 
 namespace Gahlawat\Slack;
 
-use GuzzleHttp\Client;
 use Log;
+use GuzzleHttp\Client;
 
 class Slack
 {
     const DEFAULT_ERROR_MESSAGE = 'Slack incoming webhook error';
-    const DEFAULT_EMOJI = ':ghost:';
-    const DEFAULT_BOT = 'jivesh-bot';
+    const DEFAULT_EMOJI         = ':ghost:';
+    const DEFAULT_BOT           = 'jivesh-bot';
 
     protected $defaultUsername = self::DEFAULT_BOT;
-    protected $defaultEmoji = self::DEFAULT_EMOJI;
+    protected $defaultEmoji    = self::DEFAULT_EMOJI;
 
     public function __construct()
     {
@@ -36,8 +36,8 @@ class Slack
         }
 
         $sendData = [
-            'text' => $message,
-            'username' => $username,
+            'text'       => $message,
+            'username'   => $username,
             'icon_emoji' => $emoji,
         ];
 
@@ -50,7 +50,7 @@ class Slack
         try {
             $response = $guzzleClient->post(config('slack.incoming-webhook'), [
                 'headers' => $headers,
-                'body' => json_encode($sendData),
+                'body'    => json_encode($sendData),
             ]);
         } catch (\Exception $e) {
             Log::error($e->getMessage());

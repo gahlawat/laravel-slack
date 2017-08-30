@@ -33,7 +33,11 @@ $ composer require jivesh/laravel-slack
 
 ## Registering the Package
 
-- In your ```config/app.php``` file, append the following code into your ```providers``` array for integrating the Service Provider for package.
+- This package supports auto discovery feature introduced in Laravel v5.5, hence it is auto registered. You may skip to 'Configuration' section below.
+
+- If your app is on Laravel v5.4 or below, follow below steps to register:
+
+ - In your ```config/app.php``` file, append the following code into your ```providers``` array for integrating the Service Provider for package.
 
 ```php
 /**

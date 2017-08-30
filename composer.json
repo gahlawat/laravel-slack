@@ -17,5 +17,15 @@
         "psr-4": {
             "Gahlawat\\": "src/Gahlawat"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Gahlawat\\Slack\\SlackServiceProvider"
+            ],
+            "aliases": {
+                "Slack": "Gahlawat\\Slack\\Facade\\Slack"
+            }
+        }
     }
 }

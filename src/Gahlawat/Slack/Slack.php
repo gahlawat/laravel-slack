@@ -27,6 +27,10 @@ class Slack
 
     public function send($message, $username = '', $emoji = '')
     {
+        if (!config('slack.incoming-webhook')) {
+            return;
+        }
+        
         if (!trim($username)) {
             $username = $this->defaultUsername;
         }

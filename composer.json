@@ -2,20 +2,36 @@
     "name": "jivesh/laravel-slack",
     "description": "A minimalist laravel integration for Slack",
     "type": "library",
-    "keywords": ["slack", "laravel"],
-    "homepage": "http://github.com/jiveshsg/laravel-slack",
+    "keywords": [
+        "slack",
+        "laravel"
+    ],
+    "homepage": "http://github.com/gahlawat/laravel-slack",
     "require": {
-        "guzzlehttp/guzzle": "^6.0"
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0"
     },
     "license": "MIT",
-    "authors": [{
-        "name": "Jivesh S. Gahlawat",
-        "email": "jiveshsg@gmail.com"
-    }],
+    "authors": [
+        {
+            "name": "Jivesh Gahlawat",
+            "email": "jiveshsg@gmail.com"
+        }
+    ],
     "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
-            "Gahlawat\\": "src/Gahlawat"
+            "Gahlawat\\Slack\\": "src/"
+        },
+        "files": [
+            "src/Helpers/functions.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Gahlawat\\Slack\\Test\\": "tests/"
         }
     },
     "extra": {

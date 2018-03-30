@@ -3,7 +3,7 @@
 return [
     'incoming-webhook' => 'https://your-incoming-webhook-url',
 
-    'default_username' => 'jivesh',
+    'default_username' => 'laravel-slack',
 
-    'default_emoji' => ':ghost:',
+    'default_emoji'    => ':bell:',
 ];

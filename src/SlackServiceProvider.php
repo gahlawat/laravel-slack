@@ -9,14 +9,14 @@ class SlackServiceProvider extends ServiceProvider
     protected function publishConfig()
     {
         $this->publishes([
-            __DIR__.'/../../config/slack.php' => config_path('slack.php'),
+            __DIR__ . '/../config/slack.php' => config_path('slack.php'),
         ]);
     }
 
     protected function registerFacade()
     {
         $this->app->bind('gahlawat.slack', function ($app) {
-            return new Slack();
+            return new Slack;
         });
     }
 

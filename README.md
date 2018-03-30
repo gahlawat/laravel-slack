@@ -21,7 +21,7 @@ A very tiny and lightweight integration with the Slack API for posting notificat
 
 ## Requirements
 
-* Laravel Framework 5.1+
+* Laravel Framework 5.*
 
 ## Installation
 
@@ -98,10 +98,12 @@ use Slack;
 Slack::send("your-message");
 ```
 
-- To change the default name and/or display icon in your Slack app for any message, use:
+- You can change the default name and/or display icon in your Slack app for any message by using optional second and third parameter.
+- To send this message privately to any user, use the fourth parameter as **@username**
+- To send this message publicly to any channel, use the fourth parameter as **#channel**
 
 ```php
-Slack::send("your-message" [,"display-name" [,"display-emoji"]]);
+Slack::send("your-message" [,"display-name" [,"display-emoji"] [,"#channel" or "@username"]]);
 
 // here [] indicates optional parameters
 ```

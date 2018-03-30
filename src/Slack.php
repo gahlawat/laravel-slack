@@ -15,14 +15,14 @@ class Slack
             return;
         }
 
+        $emoji = trim($emoji);
+        $channel = trim($channel);
         $username = trim($username);
-        $emoji    = trim($emoji);
-        $channel  = trim($channel);
 
-        $payload['text']       = $message;
-        $payload['username']   = empty($username) ? config('slack.default_username') : $username;
+        $payload['text'] = $message;
+        $payload['username'] = empty($username) ? config('slack.default_username') : $username;
         $payload['icon_emoji'] = empty($emoji) ? config('slack.default_emoji') : $emoji;
-        $payload['channel']    = $channel;
+        $payload['channel'] = $channel;
 
         $headers = [
             'Content-Type' => 'application/json',

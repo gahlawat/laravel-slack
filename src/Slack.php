@@ -15,20 +15,20 @@ class Slack
             return;
         }
 
-        $emoji = trim($emoji);
-        $channel = trim($channel);
+        $emoji    = trim($emoji);
+        $channel  = trim($channel);
         $username = trim($username);
 
-        $payload['text'] = $message;
-        $payload['username'] = empty($username) ? config('slack.default_username') : $username;
+        $payload['text']       = $message;
+        $payload['username']   = empty($username) ? config('slack.default_username') : $username;
         $payload['icon_emoji'] = empty($emoji) ? config('slack.default_emoji') : $emoji;
-        $payload['channel'] = $channel;
+        $payload['channel']    = $channel;
 
         $headers = [
             'Content-Type' => 'application/json',
         ];
 
-        $guzzleClient = new Client();
+        $guzzleClient = new Client;
 
         try {
             $response = $guzzleClient->post(config('slack.incoming-webhook'), [

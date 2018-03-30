@@ -24,15 +24,15 @@
     "autoload": {
         "psr-4": {
             "Gahlawat\\Slack\\": "src/"
-        },
-        "files": [
-            "src/Helpers/functions.php"
-        ]
+        }
     },
     "autoload-dev": {
         "psr-4": {
             "Gahlawat\\Slack\\Test\\": "tests/"
-        }
+        },
+        "files": [
+            "tests/Helpers/functions.php"
+        ]
     },
     "extra": {
         "laravel": {

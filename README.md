@@ -1,9 +1,9 @@
 # laravel-slack
 
-[![Author](https://img.shields.io/badge/author-@jivesh-blue.svg?style=flat-square)](https://twitter.com/jiveshsg)
-[![Scrutinizer Build Status](https://img.shields.io/scrutinizer/build/g/jiveshsg/laravel-slack.svg?style=flat-square)](https://scrutinizer-ci.com/g/jiveshsg/laravel-slack/build-status/master)
-[![Quality Score](https://img.shields.io/scrutinizer/g/jiveshsg/laravel-slack.svg?style=flat-square)](https://scrutinizer-ci.com/g/jiveshsg/laravel-slack/?branch=master)
-[![Code Climate](https://img.shields.io/codeclimate/github/jiveshsg/laravel-slack.svg?style=flat-square)](https://codeclimate.com/github/jiveshsg/laravel-slack)
+[![Author](https://img.shields.io/badge/author-@jivesh-blue.svg?style=flat-square)](https://twitter.com/JiveshGahlawat)
+[![Scrutinizer Build Status](https://img.shields.io/scrutinizer/build/g/gahlawat/laravel-slack.svg?style=flat-square)](https://scrutinizer-ci.com/g/gahlawat/laravel-slack/build-status/master)
+[![Quality Score](https://img.shields.io/scrutinizer/g/gahlawat/laravel-slack.svg?style=flat-square)](https://scrutinizer-ci.com/g/gahlawat/laravel-slack/?branch=master)
+[![Code Climate](https://img.shields.io/codeclimate/maintainability/gahlawat/laravel-slack.svg?style=flat-square)](https://codeclimate.com/github/gahlawat/laravel-slack)
 [![Total Downloads](https://img.shields.io/packagist/dt/jivesh/laravel-slack.svg?style=flat-square)](https://packagist.org/packages/jivesh/laravel-slack)
 [![Packagist Version](https://img.shields.io/packagist/v/jivesh/laravel-slack.svg?style=flat-square)](https://packagist.org/packages/jivesh/laravel-slack)
 [![Software License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://packagist.org/packages/jivesh/laravel-slack)
@@ -21,7 +21,7 @@ A very tiny and lightweight integration with the Slack API for posting notificat
 
 ## Requirements
 
-* Laravel Framework 5.*
+* Laravel Framework 5+
 
 ## Installation
 

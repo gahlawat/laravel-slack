@@ -17,9 +17,10 @@ class SendTest extends TestCase
 
     public function testFailedSlackRequestWithWrongEndpoint()
     {
-        $this->expectException(\ErrorException::class);
+        // $this->expectException(\Exception::class);
+        $response = Slack::send('hi');
 
-        $res = Slack::send('hi');
+        $this->assertEquals(null, $response);
     }
 
     public function testSuccessfulSlackRequest()

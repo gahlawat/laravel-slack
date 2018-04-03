@@ -7,8 +7,6 @@ use GuzzleHttp\Client;
 
 class Slack
 {
-    const DEFAULT_ERROR_MESSAGE = 'Slack incoming webhook error';
-
     public function send($message, $username = null, $emoji = null, $channel = null)
     {
         if (! config('slack.incoming-webhook')) {
@@ -37,10 +35,6 @@ class Slack
             ]);
         } catch (\Exception $e) {
             Log::error($e->getMessage());
-        }
-
-        if (isset($response) && $response->getStatusCode() != 200) {
-            Log::error(self::DEFAULT_ERROR_MESSAGE);
         }
 
         return $response;

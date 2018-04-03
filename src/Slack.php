@@ -39,7 +39,7 @@ class Slack
             Log::error($e->getMessage());
         }
 
-        if ($response->getStatusCode() != 200) {
+        if (!isset($response) || $response->getStatusCode() != 200) {
             Log::error(self::DEFAULT_ERROR_MESSAGE);
         }
     }

@@ -37,6 +37,6 @@ class Slack
             Log::error($e->getMessage());
         }
 
-        return $response;
+        return $response ?? null;
     }
 }

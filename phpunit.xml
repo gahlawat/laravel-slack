@@ -9,6 +9,10 @@
          processIsolation="false"
          stopOnFailure="false">
     <testsuites>
+        <testsuite name="Feature">
+            <directory suffix="Test.php">./tests/Feature</directory>
+        </testsuite>
+
         <testsuite name="Unit">
             <directory suffix="Test.php">./tests/Unit</directory>
         </testsuite>
@@ -20,5 +24,6 @@
     </filter>
     <php>
         <env name="APP_NAME" value="laravel-slack"/>
+        <env name="SAMPLE_WEBHOOK" value="https://hooks.slack.com/services/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"/>
     </php>
 </phpunit>

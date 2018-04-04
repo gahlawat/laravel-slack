@@ -9,4 +9,4 @@ install:
 
 script:
   - ./vendor/bin/phpunit
-
+  - composer check-style

@@ -1,9 +1,9 @@
 <?php
 
-namespace Gahlawat\Slack\Test\Unit;
+namespace Gahlawat\Slack\Tests\Unit;
 
 use Gahlawat\Slack\Slack;
-use PHPUnit\Framework\TestCase;
+use Gahlawat\Slack\Tests\TestCase;
 
 class ObjectTest extends TestCase
 {

@@ -6,13 +6,7 @@
         "slack",
         "laravel"
     ],
-    "homepage": "http://github.com/gahlawat/laravel-slack",
-    "require": {
-        "guzzlehttp/guzzle": "^6.3"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "^7.0"
-    },
+    "homepage": "https://gahlawat.github.io/laravel-slack",
     "license": "MIT",
     "authors": [
         {
@@ -20,7 +14,14 @@
             "email": "jiveshsg@gmail.com"
         }
     ],
-    "minimum-stability": "stable",
+    "require": {
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0",
+        "orchestra/testbench": "^3.6",
+        "squizlabs/php_codesniffer": "^3.2"
+    },
     "autoload": {
         "psr-4": {
             "Gahlawat\\Slack\\": "src/"
@@ -28,12 +29,15 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Gahlawat\\Slack\\Test\\": "tests/"
-        },
-        "files": [
-            "tests/Helpers/functions.php"
-        ]
+            "Gahlawat\\Slack\\Tests\\": "tests/"
+        }
     },
+    "scripts": {
+        "test": "phpunit",
+        "check-style": "phpcs -p --standard=PSR2 src/",
+        "fix-style": "phpcbf -p --standard=PSR2 src/"
+    },
+    "minimum-stability": "stable",
     "extra": {
         "laravel": {
             "providers": [

@@ -8,5 +8,5 @@ install:
   - composer install --no-interaction --no-suggest
 
 script:
-  - ./vendor/bin/phpunit
+  - composer test
   - composer check-style

@@ -1,7 +1,7 @@
 # laravel-slack
 
 [![Author](https://img.shields.io/badge/author-@jivesh-blue.svg?style=flat-square)](https://twitter.com/JiveshGahlawat)
-[![Travis](https://img.shields.io/travis/gahlawat/laravel-slack.svg?style=flat-square)](https://travis-ci.org/gahlawat/laravel-slack)
+[![Travis Build](https://img.shields.io/travis/gahlawat/laravel-slack.svg?style=flat-square)](https://travis-ci.org/gahlawat/laravel-slack)
 [![Quality Score](https://img.shields.io/scrutinizer/g/gahlawat/laravel-slack.svg?style=flat-square)](https://scrutinizer-ci.com/g/gahlawat/laravel-slack/?branch=master)
 [![Code Climate](https://img.shields.io/codeclimate/maintainability/gahlawat/laravel-slack.svg?style=flat-square)](https://codeclimate.com/github/gahlawat/laravel-slack)
 [![Total Downloads](https://img.shields.io/packagist/dt/jivesh/laravel-slack.svg?style=flat-square)](https://packagist.org/packages/jivesh/laravel-slack)

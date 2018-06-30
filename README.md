@@ -1,4 +1,4 @@
-# laravel-slack
+# Laravel Slack
 
 [![Author](https://img.shields.io/badge/author-@jivesh-blue.svg?style=flat-square)](https://twitter.com/JiveshGahlawat)
 [![Travis Build](https://img.shields.io/travis/gahlawat/laravel-slack.svg?style=flat-square)](https://travis-ci.org/gahlawat/laravel-slack)

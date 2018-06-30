@@ -7,27 +7,41 @@ use Gahlawat\Slack\Tests\TestCase;
 
 class SendTest extends TestCase
 {
-    /**
-     * @expectedException ArgumentCountError
-     */
-    public function testFailedSlackRequestWithEmptyMessage()
-    {
-    	Slack::send();
-    }
 
-    public function testFailedSlackRequestWithWrongEndpoint()
-    {
-        // $this->expectException(\Exception::class);
-        $response = Slack::send('hi');
+    // Tests
+    // testSUccessfulRequest
+    // testFailedRequest
+    // testFailedRequestWithEmptyMessage
+    // testFailedRequestWithWrongUrl
+    // testFailedRequestWith
 
-        $this->assertEquals(null, $response);
-    }
+    // *
+    //  * @expectedException ArgumentCountError
+
+    // public function testFailedSlackRequestWithEmptyMessage()
+    // {
+
+        // dump(config('slack.webhook_url'));
+        // config(['slack.webhook_url' => env('SAMPLE_WEBHOOK')]);
+        // dd(config('slack.webhook_url'));
+        // dd(2);
+        // Slack::create(env('SAMPLE_WEBHOOK'))->send('hi');
+    // }
+
+    // public function testFailedSlackRequestWithWrongEndpoint()
+    // {
+    //     // $this->expectException(\Exception::class);
+    //     $response = Slack::send('hi');
+
+    //     $this->assertEquals(null, $response);
+    // }
 
     public function testSuccessfulSlackRequest()
     {
-    	config(['slack.incoming-webhook' => env('SAMPLE_WEBHOOK')]);
+        $response = Slack::create()->send('hi');
+    	// $response = Slack::create(env('SAMPLE_WEBHOOK'))->send('hi');
 
-    	$response = Slack::send('hi');
+        dd($response);
 
     	$this->assertEquals(200, $response->getStatusCode());
     }

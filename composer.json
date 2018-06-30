@@ -1,7 +1,7 @@
 {
     "name": "jivesh/laravel-slack",
     "description": "A minimalist laravel integration for Slack",
-    "type": "library",
+    "type": "package",
     "keywords": [
         "slack",
         "laravel"
@@ -18,6 +18,7 @@
         "guzzlehttp/guzzle": "^6.3"
     },
     "require-dev": {
+        "mockery/mockery": "^1.0",
         "orchestra/testbench": "^3.6",
         "phpunit/phpunit": "^7.0",
         "squizlabs/php_codesniffer": "^3.2"
